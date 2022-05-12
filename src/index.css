@@ -1,3 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://use.typekit.net/xpz6yos.css");
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +10,117 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-feature-settings: "ss02";
+}
+* {
+  font-family: "Poppins", cursive, sans-serif;
+  color: #000000;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: linear-gradient(87.52deg, #0d0c0f 4.16%, #060606 95.84%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+.app {
+  background: #ffffff;
+  width: 650px;
+  min-height: 350px;
+  height: min-content;
+  border-radius: 15px;
+  border: 4px solid #000000;
+  padding: 30px;
+  box-shadow: 4px -4px 0px #9b79e5, -4px 4px 0px  #5FFAC4;
+  display: flex;
+}
+
+.score-section {
+  color: #6A55E0;
+  font-weight: bold;
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: top;
+  text-align: left;
+}
+
+.question-count {
+  margin-bottom: 35px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  color: #4F3275;
+  margin-bottom: 5px;
+  margin-right: 50px;
+}
+
+.timer-text {
+  background: rgb(230, 153, 12);
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid rgb(255, 189, 67);
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 600;
+  background-color: #363636;
+  border-radius: 50px;
+  display: flex;
+  padding: 14px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 0px;
+  text-align: center;
+  height: 70px;
+}
+
+.correct {
+  background-color: #5FFAC4;
+}
+
+.incorrect {
+  background-color: #D953C5;
+}
+
+button:hover {
+  background: #3F3284;
+  box-shadow: -2px 2px 0px #5FFAC4, 2px -2px 0px #bf5ffa;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
 }
