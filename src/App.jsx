@@ -145,6 +145,7 @@ export default function App() {
 
 	const handleRestart = ()=>{
 		setCurrentQuestion(0)
+		setScore(0)
 		setShowScore(false)
 	}
 	return (
