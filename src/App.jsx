@@ -37,7 +37,7 @@ export default function App() {
 				{ answerText: 'Skinny Puppy', isCorrect: false },
 				{ answerText: 'fun.', isCorrect: false },
 				{ answerText: 'Tiesto', isCorrect: false },
-				{ answerText: 'Coldplay', isCorrect: true },
+				{ answerText: 'Barenaked Ladies', isCorrect: true },
 			],
 		},
 		{
@@ -99,7 +99,7 @@ export default function App() {
 			answerOptions: [
 				{ answerText: 'Chantal Iorio', isCorrect: true },
 				{ answerText: 'Penny Palmer', isCorrect: false },
-				{ answerText: 'Angela Wincentowich', isCorrect: false },
+				{ answerText: 'Angela Wicentowich', isCorrect: false },
 				{ answerText: 'Jen Foster', isCorrect: true },
 			],
 		},
